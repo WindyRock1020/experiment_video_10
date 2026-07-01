@@ -6,28 +6,35 @@
   <title>Supplementary Figure6</title>
 
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      background: white;
-      overflow: auto;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
 
     img {
+      width: min(100%, 1200px);
       height: auto;
       display: block;
-      max-width: none;
     }
   </style>
 </head>
 <body>
-  <img id="figureImage" src="./Figure6.png" alt="Figure6">
-
-  <script>
-    window.addEventListener("load", function () {
-      const image = document.getElementById("figureImage");
-      image.style.width = window.innerWidth + "px";
-    });
-  </script>
+  <div class="image-wrapper">
+    <img src="./Figure6.png" alt="Figure6">
+  </div>
 </body>
 </html>
