@@ -6,19 +6,35 @@
   <title>Supplementary Figure7</title>
 
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
 
     img {
-      width: 100%;
+      width: min(100%, 1200px);
       height: auto;
       display: block;
     }
   </style>
 </head>
 <body>
-  <img src="./Figure7.png" alt="Figure7">
+  <div class="image-wrapper">
+    <img src="./Figure7.png" alt="Figure7">
+  </div>
 </body>
 </html>
