@@ -9,16 +9,25 @@
     body {
       margin: 0;
       padding: 0;
+      background: white;
+      overflow: auto;
     }
 
     img {
-      width: 100%;
       height: auto;
       display: block;
+      max-width: none;
     }
   </style>
 </head>
 <body>
-  <img src="./Figure6.png" alt="Figure6">
+  <img id="figureImage" src="./Figure6.png" alt="Figure6">
+
+  <script>
+    window.addEventListener("load", function () {
+      const image = document.getElementById("figureImage");
+      image.style.width = window.innerWidth + "px";
+    });
+  </script>
 </body>
 </html>
